@@ -6,6 +6,8 @@ elif [[ $platform == 'Darwin' ]]; then
   alias a='ls -lrthG'
 fi
 
+alias ls="ls --color"
+
 alias amend="git commit --amend"
 #alias asu="cd ~/code/rails/activesupport"
 #alias aliases='vim ~/.dotfiles/bash/aliases'

@@ -3,8 +3,12 @@ source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
 
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
+if [ -f ~/.bash_profile.local ]; then
+  . ~/.bash_profile.local
+fi
+
+if [ -f ~/.bashrc.local ]; then
+  . ~/.bashrc.local
 fi
 
 # Enable RVM

@@ -1,0 +1,21 @@
+set nonumber
+set paste
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+function! RunSpec(command)
+  " TODO: handle args such as --tag focus here, or make a separate command for it
+  let spec = ":ConqueTermSplit bundle exec rspec"
+  if a:command == ''
+    let dir = ''
+  else
+    let dir = a:command
+  endif
+  execute spec." -r spec/support/vim_formatter -f RSpec::Core::Formatters::VimFormatter -cfn " . dir . " " . bufname('%')
+  cw
+endfunction
+command! -nargs=? -complete=file Spec call RunSpec(<q-args>)
+map <leader>s :call RunSpec(" -l " . <C-r>=line('.')<CR>)
+map <leader>S :call RunSpec("")
+
+set tags=./tags
+set wildmode=longest,full

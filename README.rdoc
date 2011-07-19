@@ -1,0 +1,12 @@
+=== Lleïr Borràs's dot files
+
+These are config files to set up a system the way I like it.
+
+Also chec vimvamvoom from eparreno, for a great vimrc and gvimrc
+https://github.com/eparreno/vimvamvoom
+
+== Installation
+
+  git clone git://github.com/lleirborras/dotfiles ~/.dotfiles
+  cd ~/.dotfiles
+  rake install

@@ -52,7 +52,7 @@ function parse_hg_branch {
   hg branch 2>/dev/null | sed 's_\(.*\)_Hg(\1)_'
 }
 function parse_svn_branch {
-  "SVN"
+  echo "SVN"
 }
 function parse_branch {
   echo "$(parse_git_branch)$(parse_hg_branch)$(parse_svn_branch)"

@@ -52,7 +52,7 @@ function parse_hg_branch {
   hg branch 2>/dev/null | sed 's_\(.*\)_Hg(\1)_'
 }
 function parse_svn_branch {
-  if [ `svn info 2>/dev/null | grep '^URL:' | sed 's_^\(URL\):.*_\1_'` == "URL" ]; then
+  if [ -n `svn info 2>/dev/null | grep '^URL:' | sed 's_^\(URL\):.*_\1_'` ]; then
     echo "SVN"
   fi
 }

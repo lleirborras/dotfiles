@@ -1,0 +1,22 @@
+[merge]
+  tool = vimdiff
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+  safecrlf = true
+  editor = mvim
+  quotepath = false
+[alias]
+  st = status
+  ci = commit
+  co = checkout
+  br = branch
+  up = !git fetch origin && git rebase origin/master
+  out = log origin..HEAD
+[color]
+  ui = auto
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[user]
+  name = Lleïr Borràs
+  email = lleir@llegeix.me

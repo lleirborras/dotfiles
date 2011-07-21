@@ -68,7 +68,7 @@ export PS1="\[\033[01;32m\]\u@\h\[\033[01;34m\] \w$YELLOW \$(parse_branch) \$\[\
 #  ssh-agent stuff  #
 #####################
 # get the ssh agent started
-SSH#_ENV="$HOME/.ssh/environment"
+SSH_ENV="$HOME/.ssh/environment"
 
 function start_agent {
   echo "Initialising new SSH agent..."

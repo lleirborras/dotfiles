@@ -102,6 +102,11 @@ end
 begin
   class Gem::GemPathSearcher
     def inspect
+      "#<#{self.class.inspect}:#{object_id}>"
+    end
+  end
+rescue NameError
+end
 
 
 # coding: utf-8

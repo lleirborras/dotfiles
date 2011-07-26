@@ -1,2 +1,7 @@
 [ui]
 username = Lleïr Borràs Metje <lleir@hesperides.cat>
+merge = gvimdiff
+
+[merge-tools]
+vimdiff.executable = gvim
+vimdiff.args = -d $base $local $output $other +close +close

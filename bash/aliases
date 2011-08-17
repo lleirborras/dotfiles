@@ -9,6 +9,7 @@ elif [[ $platform == 'Darwin' ]]; then
 fi
 
 
+alias start_postgres="postgres -D /usr/local/var/postgres"
 alias amend="git commit --amend"
 #alias asu="cd ~/code/rails/activesupport"
 alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'

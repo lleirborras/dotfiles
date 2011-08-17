@@ -1,6 +1,5 @@
 set nonumber
 set paste
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 function! RunSpec(command)
   " TODO: handle args such as --tag focus here, or make a separate command for it

@@ -2,11 +2,12 @@
 platform=`uname`
 if [[ $platform == 'Linux' ]]; then
   alias a='ls -lrth --color'
+  alias ls="ls --color"
 elif [[ $platform == 'Darwin' ]]; then
   alias a='ls -lrthG'
+  alias ls="ls -G"
 fi
 
-alias ls="ls --color"
 
 alias amend="git commit --amend"
 #alias asu="cd ~/code/rails/activesupport"

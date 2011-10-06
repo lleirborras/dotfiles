@@ -122,9 +122,12 @@ end
 #require 'irb/completion'
 #require 'irb/ext/save-history'
 #require 'pp'
-#require 'wirble'
-#Wirble.init
-#Wirble.colorize
+if desire 'wirble'
+  Wirble.init
+  Wirble.colorize
+end
+
+desire 'hirb'
 
 ## history
 #IRB.conf[:SAVE_HISTORY] = 100

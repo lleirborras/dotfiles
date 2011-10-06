@@ -24,6 +24,28 @@ end
 desire 'tpope'
 desire 'rubygems'
 
+desire 'irb/completion'
+desire 'irb/ext/save-history'
+desire 'pp'
+if desire 'wirble'
+  Wirble.init
+  Wirble.colorize
+end
+
+desire 'hirb'
+
+## history
+IRB.conf[:SAVE_HISTORY] = 100
+IRB.conf[:HISTORY_FILE] = File.expand_path('~/.irb_history')
+
+## Auto-indentation
+IRB.conf[:AUTO_INDENT]=true
+
+#Log to STDOUT if in Rails
+if Rails && Rails.version
+  ActiveRecord::Base.logger = Logger.new(STDOUT)
+end
+
 def IRB.rails_root
   conf[:LOAD_MODULES].to_ary.include?('console_app') &&
     conf[:LOAD_MODULES].
@@ -119,22 +141,6 @@ end
 #ARGV.concat ["--readline", "--prompt-mode", "simple"]
 
 #require 'rubygems'
-#require 'irb/completion'
-#require 'irb/ext/save-history'
-#require 'pp'
-if desire 'wirble'
-  Wirble.init
-  Wirble.colorize
-end
-
-desire 'hirb'
-
-## history
-#IRB.conf[:SAVE_HISTORY] = 100
-#IRB.conf[:HISTORY_FILE] = File.expand_path('~/.irb_history')
-
-## Auto-indentation
-#IRB.conf[:AUTO_INDENT]=true
 
 ## Disable readline. Useful for latin users
 #IRB.conf[:USE_READLINE]=true

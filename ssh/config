@@ -1,0 +1,12 @@
+Host ccpi
+  HostName producciointegrada.cat
+
+Host hesperides
+  HostName hesperides.cat
+
+Host minerva
+  HostName minerva.hesperides.cat
+
+Host mercurial
+  HostName mercurial
+  User hg

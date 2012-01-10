@@ -1,0 +1,16 @@
+# Or source from bash aliases, which use the same syntax
+platform=`uname`
+if [[ $platform == 'Linux' ]]; then
+  alias a='ls -lrth --color'
+  alias ls="ls --color"
+elif [[ $platform == 'Darwin' ]]; then
+  alias a='ls -lrthG'
+  alias ls="ls -G"
+fi
+
+alias tu='top -o cpu' # cpu
+alias tm='top -o vsize' # memory
+
+alias g="git status"
+
+alias saas="cd ~/Projects/click/Hv4SaaS_r3/source"

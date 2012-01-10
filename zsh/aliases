@@ -8,8 +8,7 @@ elif [[ $platform == 'Darwin' ]]; then
   alias ls="ls -G"
 fi
 
-alias tu='top -o cpu' # cpu
-alias tm='top -o vsize' # memory
+alias start_postgres="postgres -D /usr/local/var/postgres"
 
 alias g="git status"
 

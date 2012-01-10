@@ -4,4 +4,13 @@
 . ~/.zsh/config
 . ~/.zsh/aliases
 
+if [ -f ~/.zshrc.local ]; then
+  . ~/.zshrc.local
+fi
+
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+
+# Enable RVM
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
 

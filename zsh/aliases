@@ -14,3 +14,17 @@ alias tm='top -o vsize' # memory
 alias g="git status"
 
 alias saas="cd ~/Projects/click/Hv4SaaS_r3/source"
+
+alias hs="h"
+alias hst="h"
+alias h="hg st"
+alias hps="hpush"
+alias hpus="hpush"
+alias hpush="hg push"
+alias hpl="hpull"
+alias hpul="hpull"
+alias hpull="hg pull"
+alias hc="hg ci -m "
+alias hm="hg merge"
+alias hb="hg branch"
+alias hbs="hg branches"

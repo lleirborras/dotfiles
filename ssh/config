@@ -10,3 +10,11 @@ Host minerva
 Host mercurial
   HostName mercurial
   User hg
+
+Host imac
+  HostName imac
+  User click
+
+Host ramonux
+  HostName ramonux
+  User ramon

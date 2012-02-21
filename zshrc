@@ -3,6 +3,7 @@
 
 . ~/.zsh/config
 . ~/.zsh/aliases
+. ~/.zsh/env
 
 if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local

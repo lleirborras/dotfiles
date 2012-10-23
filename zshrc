@@ -9,9 +9,11 @@ if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local
 fi
 
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 
 # Enable RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

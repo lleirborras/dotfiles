@@ -12,7 +12,7 @@ if [ -f ~/.bashrc.local ]; then
   . ~/.bashrc.local
 fi
 
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
 
 # Enable RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

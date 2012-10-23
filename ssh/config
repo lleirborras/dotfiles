@@ -7,6 +7,9 @@ Host hesperides
 Host minerva
   HostName minerva.hesperides.cat
 
+Host saas
+  HostName saas.hesperides.cat
+
 Host mercurial
   HostName mercurial
   User hg
@@ -18,3 +21,7 @@ Host imac
 Host ramonux
   HostName ramonux
   User ramon
+
+Host vidella
+  HostName vidella.no-ip.org
+  User pi

@@ -2,7 +2,7 @@
   tool = vimdiff
 [core]
   excludesfile = ~/.gitignore
-  autocrlf = input
+	autocrlf = false
   safecrlf = true
   editor = mvim
   quotepath = false

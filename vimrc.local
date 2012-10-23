@@ -18,3 +18,5 @@ map <leader>S :call RunSpec("")
 
 set tags=./tags
 set wildmode=longest,full
+
+autocmd! FocusGained

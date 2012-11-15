@@ -42,7 +42,7 @@ IRB.conf[:HISTORY_FILE] = File.expand_path('~/.irb_history')
 IRB.conf[:AUTO_INDENT]=true
 
 #Log to STDOUT if in Rails
-if Rails && Rails.version
+if defined?(Rails) && Rails.version
   ActiveRecord::Base.logger = Logger.new(STDOUT)
 end
 

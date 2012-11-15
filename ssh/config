@@ -25,3 +25,13 @@ Host ramonux
 Host vidella
   HostName vidella.no-ip.org
   User pi
+
+Host ifad-dev
+  HostName lleir.ifad.dev
+  Port 443
+  User lleir
+
+Host *
+  ForwardAgent yes
+  ForwardX11 yes
+  LogLevel debug

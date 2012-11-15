@@ -19,8 +19,4 @@ map <leader>S :call RunSpec("")
 set tags=./tags
 set wildmode=longest,full
 
-<<<<<<< HEAD
-autocmd! FocusGained
-=======
 autocmd! FocusGained * call UpdateNERDTree()
->>>>>>> 95200d8c0e7838bb243ba61c0fb467a8ae87d7bd

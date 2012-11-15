@@ -4,7 +4,7 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.rdoc LICENSE id_dsa.pub].include? file
+    next if %w[Rakefile README.rdoc LICENSE id_dsa.pub lleir.zsh-theme].include? file
     
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
@@ -37,6 +37,11 @@ task :install do
   system %Q{ln -s "$PWD/id_dsa.pub" "$HOME/.ssh/id_dsa.pub"}
   system %Q{rm "$HOME/.ssh/id_rsa.pub"}
   system %Q{ln -s "$PWD/id_rsa.pub" "$HOME/.ssh/id_rsa.pub"}
+
+  #oh-my-zsh theme
+  puts "Linking oh-my-zsh theme"
+  system %Q{rm "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
+  system %Q{ln -s "$PWD/lleir.zsh-theme" "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
 end
 
 def replace_file(file)

@@ -4,7 +4,7 @@
   excludesfile = ~/.gitignore
 	autocrlf = false
   safecrlf = true
-  editor = mvim
+  editor = vim
   quotepath = false
 [alias]
   pus = push
@@ -27,3 +27,5 @@
 	token = f2b3096a4351aaa638e9ea0e21409d92
 [branch]
   autosetuprebase = remote
+[credential]
+	helper = osxkeychain

@@ -48,3 +48,6 @@ fi
 
 # Customize to your needs...
 export PATH=$HOME/.rvm/gems/ruby-1.9.3-p286/bin:$HOME/.rvm/gems/ruby-1.9.3-p286@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p286/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/bin:/usr/local/sbin:$HOME/.rvm/bin:$HOME/.rvm/bin
+
+eval $(authsock)
+cd ..;1

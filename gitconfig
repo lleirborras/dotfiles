@@ -29,3 +29,5 @@
   autosetuprebase = remote
 [credential]
 	helper = osxkeychain
+[push]
+	default = tracking

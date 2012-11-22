@@ -34,4 +34,4 @@ Host ifad-dev
 Host *
   ForwardAgent yes
   ForwardX11 yes
-  LogLevel debug
+  #LogLevel debug

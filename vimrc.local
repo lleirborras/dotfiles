@@ -20,3 +20,7 @@ set tags=./tags
 set wildmode=longest,full
 
 autocmd! FocusGained * call UpdateNERDTree()
+
+"enable digraph option
+"http://vim.wikia.com/wiki/Entering_special_characters
+set dg

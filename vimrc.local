@@ -23,4 +23,17 @@ autocmd! FocusGained * call UpdateNERDTree()
 
 "enable digraph option
 "http://vim.wikia.com/wiki/Entering_special_characters
-set dg
+"set dg
+set autoindent
+
+" Tab completion options
+"set wildmode=list:longest,list:full
+"set complete=.,w,t
+"set wildmenu
+"set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*
+
+"some stuff to get the mouse going in term
+set mouse=a
+set ttymouse=xterm2
+
+

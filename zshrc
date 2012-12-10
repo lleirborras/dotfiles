@@ -7,6 +7,8 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="lleir"
 
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/bin:/usr/local/sbin
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -29,25 +31,21 @@ ZSH_THEME="lleir"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler debian gem git gnu-utils osx rails rails3 rake ruby rvm vi-mode per-directory-history cap github git-extras )
+plugins=(brew bundler debian gem git gnu-utils osx rails rails3 rake ruby rbenv vi-mode per-directory-history cap github git-extras )
 
 source $ZSH/oh-my-zsh.sh
 
 . ~/.zsh/config
 . ~/.zsh/aliases
 . ~/.zsh/env
+. ~/.zshenv
 
 if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local
 fi
 
-#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
-
-# Enable RVM
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
 # Customize to your needs...
-export PATH=$HOME/.rvm/gems/ruby-1.9.3-p286/bin:$HOME/.rvm/gems/ruby-1.9.3-p286@global/bin:$HOME/.rvm/rubies/ruby-1.9.3-p286/bin:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/bin:/usr/local/sbin:$HOME/.rvm/bin:$HOME/.rvm/bin
 
 eval $(authsock)
 cd ..;1

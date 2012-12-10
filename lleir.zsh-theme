@@ -12,7 +12,7 @@ function box_name {
     [ -f ~/.box-name ] && cat ~/.box-name || hostname -s
 }
 
-PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}$(box_name)%{$reset_color%} → %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%} %{$fg_bold[black]%}$(vcprompt)[]
+PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}$(box_name)%{$reset_color%} → %{$fg_bold[green]%}${PWD/#$HOME/~}%{$reset_color%} %{$fg_bold[black]%}$(vcprompt)[$(rbenv version-name)]
 $(virtualenv_info)%(?,,%{${fg_bold[white]}%}[%?]%{$reset_color%} )%# '
 
 local return_status="%{$fg[red]%}%(?..✘)%{$reset_color%}"

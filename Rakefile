@@ -4,8 +4,8 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README.rdoc LICENSE id_dsa.pub lleir.zsh-theme].include? file
-    
+    next if %w[Rakefile README.rdoc LICENSE id_dsa.pub lleir.zsh-theme after.vimrc before.vimrc].include? file
+
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
         replace_file(file)
@@ -42,6 +42,10 @@ task :install do
   puts "Linking oh-my-zsh theme"
   system %Q{rm "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
   system %Q{ln -s "$PWD/lleir.zsh-theme" "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
+
+  #vim
+  system %Q{ln -s "$PWD/after.vimrc" "$HOME/.vim/after.vimrc"}
+  system %Q{ln -s "$PWD/before.vimrc" "$HOME/.vim/after.vimrc"}
 end
 
 def replace_file(file)

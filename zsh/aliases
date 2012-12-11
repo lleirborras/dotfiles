@@ -69,3 +69,7 @@ function gg() {
 
 # Ruby
 alias r="rake"
+
+
+# SSH
+alias ssh='~/bin/renv;ssh'

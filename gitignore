@@ -5,7 +5,8 @@
 .hg
 .bundle
 .rvmrc
-.rvenb-version
+.rbenv-version
+.rbenv-gemsets
 *~
 *.cache
 *.log

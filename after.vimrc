@@ -13,3 +13,6 @@ set mouse=a
 " Colorschema
 set t_Co=16
 set background=dark
+
+" Line numbering
+set relativenumber!

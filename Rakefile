@@ -45,10 +45,11 @@ task :install do
 
   #vim
   system %Q{curl -L https://raw.github.com/zaiste/vimified/master/install.sh | sh}
-  system %Q{ln -s "$PWD/vimrc" "$HOME/.vimrc"}
+  system %Q{ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"}
   system %Q{ln -s "$PWD/after.vimrc" "$HOME/.vim/after.vimrc"}
   system %Q{ln -s "$PWD/before.vimrc" "$HOME/.vim/after.vimrc"}
   system %Q{vim +BundleInstall +qall}
+  system %Q{vim +BundleUpdate +qall}
 end
 
 def replace_file(file)

@@ -30,3 +30,4 @@ log/*.log
 reports
 webrat-*
 vendor/ruby/**/*
+config/settings/local.rb

@@ -30,6 +30,8 @@ Host ifad-dev
   HostName lleir.ifad.dev
   Port 443
   User lleir
+  LocalForward localhost:1080 localhost:1080
+  LocalForward localhost:5984 localhost:5984
 
 Host *
   ForwardAgent yes

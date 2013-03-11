@@ -44,7 +44,7 @@ task :install do
   system %Q{ln -s "$PWD/lleir.zsh-theme" "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
 
   #vim
-  system %Q{curl -L https://raw.github.com/zaiste/vimified/master/install.sh | sh}
+  system %Q{cd ~; curl -L https://raw.github.com/zaiste/vimified/master/install.sh | sh}
   system %Q{ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"}
   system %Q{ln -s "$PWD/after.vimrc" "$HOME/.vim/after.vimrc"}
   system %Q{ln -s "$PWD/before.vimrc" "$HOME/.vim/after.vimrc"}

@@ -73,7 +73,3 @@ alias r="rake"
 
 # SSH
 alias ssh='~/bin/renv;ssh'
-
-
-#VIM
-alias vi='/usr/local/bin/vim'

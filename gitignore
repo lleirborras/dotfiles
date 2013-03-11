@@ -18,7 +18,6 @@ tmp/**/*
 doc/api
 doc/app
 public/packages
-public/assets/**/*
 public/uploads
 public/doc/
 results

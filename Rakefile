@@ -39,6 +39,8 @@ task :install do
   system %Q{ln -s "$PWD/id_rsa.pub" "$HOME/.ssh/id_rsa.pub"}
 
   #oh-my-zsh theme
+  puts "Installing OhMyZsh"
+  system %Q{curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh}
   puts "Linking oh-my-zsh theme"
   system %Q{rm "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
   system %Q{ln -s "$PWD/lleir.zsh-theme" "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}

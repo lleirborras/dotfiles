@@ -3,7 +3,7 @@ require 'rake'
 desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
-  Dir['*'].each do |file|
+  Dir['*'].sort.each do |file|
     next if %w[Rakefile README.rdoc LICENSE id_dsa.pub lleir.zsh-theme after.vimrc before.vimrc vimrc].include? file
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))

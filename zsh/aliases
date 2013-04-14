@@ -72,4 +72,4 @@ alias r="rake"
 
 
 # SSH
-alias ssh='~/bin/renv;ssh'
+#alias ssh='~/bin/renv;ssh'

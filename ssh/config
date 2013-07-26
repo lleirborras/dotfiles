@@ -30,7 +30,11 @@ Host ifad-dev
   HostName a008.ifad.org
   User lleir
   LocalForward localhost:1080 localhost:1080
+  LocalForward localhost:3000 localhost:3000
+  LocalForward localhost:3001 localhost:3001
   LocalForward localhost:5984 localhost:5984
+  LocalForward localhost:5432 localhost:5432
+  LocalForward localhost:8389 10.60.10.10:389
 
 Host *
   ForwardAgent yes

@@ -31,7 +31,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler debian gem git gnu-utils osx rails rails3 rake ruby rbenv vi-mode per-directory-history cap github git-extras )
+plugins=(brew bundler debian gem git gnu-utils osx rails rails3 rake ruby rbenv per-directory-history cap github git-extras )
 
 source $ZSH/oh-my-zsh.sh
 

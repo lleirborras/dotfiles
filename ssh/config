@@ -27,8 +27,7 @@ Host vidella
   User pi
 
 Host ifad-dev
-  HostName lleir.ifad.dev
-  Port 443
+  HostName lleir.a008.ifad.org
   User lleir
   LocalForward localhost:1080 localhost:1080
   LocalForward localhost:3000 localhost:3000
@@ -40,4 +39,6 @@ Host ifad-dev
 Host *
   ForwardAgent yes
   ForwardX11 yes
+  Compression yes
+  CompressionLevel 9
   #LogLevel debug

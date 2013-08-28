@@ -26,7 +26,6 @@ coverage.data
 config/database.yml
 db/*.sqlite3
 log/*.log
-reports
 webrat-*
 vendor/ruby/**/*
 config/settings/local.rb

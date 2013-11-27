@@ -73,3 +73,6 @@ alias r="rake"
 
 # SSH
 #alias ssh='~/bin/renv;ssh'
+
+#yui
+alias yui='yui-compressor'

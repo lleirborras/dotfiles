@@ -26,6 +26,10 @@ Host vidella
   HostName vidella.no-ip.org
   User pi
 
+Host roma
+  HostName ambaaradam.no-ip.org
+  User pi
+
 Host ifad-dev
   HostName lleir.a008.ifad.org
   User lleir

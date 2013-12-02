@@ -31,7 +31,7 @@ export PATH=/usr/games:/usr/local/games:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler coffee colored-man colorize compleat debian gem git gitfast gnu-utils lol mercurial postgres osx rails rails3 rails4 rake ruby rbenv rsync per-directory-history cap github git-extras tmux ssh-agent vundle)
+plugins=(brew bundler coffee colored-man colorize compleat debian gem git gitfast gnu-utils lol mercurial postgres osx rails rake ruby rbenv rsync per-directory-history cap github git-extras tmux ssh-agent vundle)
 
 source $ZSH/oh-my-zsh.sh
 

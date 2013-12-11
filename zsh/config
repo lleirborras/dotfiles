@@ -61,3 +61,5 @@ bindkey '^R' history-incremental-search-backward # Perform backward search in co
 bindkey '^S' history-incremental-search-forward  # Perform forward search in command line history
 bindkey '^P' history-search-backward             # Go back/search in history (autocomplete)
 bindkey '^N' history-search-forward              # Go forward/search in history (autocomplete)
+
+zstyle :omz:plugins:ssh-agent agent-forwarding on

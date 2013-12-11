@@ -1,7 +1,4 @@
 export EDITOR="vim"
 export PATH=/usr/local/bin:$PATH:~/bin:/usr/local/sbin
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
-
-#export CC=/usr/local/bin/gcc-4.7
-#export CXX=/usr/local/bin/g++-4.7
-#export CPPFLAGS=-I/opt/X11/include
+export PGCLUSTER="9.3/main"

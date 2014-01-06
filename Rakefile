@@ -4,7 +4,7 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir['*'].sort.each do |file|
-    next if %w[Rakefile README.rdoc LICENSE id_dsa.pub lleir.zsh-theme after.vimrc before.vimrc local.vimrc vimrc].include? file
+    next if %w[Rakefile README.rdoc LICENSE id_dsa.pub lleir.zsh-theme].include? file
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
@@ -46,13 +46,7 @@ task :install do
   system %Q{ln -s "$PWD/lleir.zsh-theme" "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
 
   #vim
-  system %Q{cd ~; curl -L https://raw.github.com/zaiste/vimified/master/install.sh | sh}
-  system %Q{ln -s "$HOME/.vim/vimrc" "$HOME/.vimrc"}
-  system %Q{ln -s "$PWD/after.vimrc" "$HOME/.vim/after.vimrc"}
-  system %Q{ln -s "$PWD/before.vimrc" "$HOME/.vim/after.vimrc"}
-  system %Q{ln -s "$PWD/local.vimrc" "$HOME/.vim/local.vimrc"}
-  system %Q{vim +BundleInstall +qall}
-  system %Q{vim +BundleUpdate +qall}
+  system %Q{curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh}
 end
 
 def replace_file(file)

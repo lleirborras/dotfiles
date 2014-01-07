@@ -47,7 +47,7 @@ fi
 
 # Customize to your needs...
 
-if [ -z "$(type -p authsock)" ]; then
-  eval $(authsock)
-fi
+#if [ -z "$(type -p authsock)" ]; then
+#  eval $(authsock)
+#fi
 cd ..;1

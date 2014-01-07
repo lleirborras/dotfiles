@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 . ~/.zsh/config
 . ~/.zsh/aliases
 . ~/.zsh/env
-. ~/.zshen
+. ~/.zshenv
 
 if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local

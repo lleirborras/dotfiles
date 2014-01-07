@@ -44,6 +44,7 @@ if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local
 fi
 
+zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa
 
 # Customize to your needs...

@@ -4,7 +4,7 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir['*'].sort.each do |file|
-    next if %w[Rakefile README.rdoc LICENSE id_dsa.pub lleir.zsh-theme].include? file
+    next if %w[Rakefile README.rdoc LICENSE ssh id_dsa.pub lleir.zsh-theme].include? file
 
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all

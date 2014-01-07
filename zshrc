@@ -44,21 +44,9 @@ if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local
 fi
 
+zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa
 
 # Customize to your needs...
-
-#if [ -z "$(type -p authsock)" ]; then
-#  eval $(authsock)
-#fi
-
-#  Predictable SSH authentication socket location.
-SOCK="/tmp/ssh-agent-$USER-screen"
-if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
-then
-    ln -sf $SSH_AUTH_SOCK $SOCK
-    export SSH_AUTH_SOCK=$SOCK
-fi
-
 # Alias vim on osx
 if [[ "$(uname)" = "Darwin" ]]; then
         alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"

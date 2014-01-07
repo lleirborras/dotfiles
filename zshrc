@@ -51,6 +51,18 @@ fi
 #  eval $(authsock)
 #fi
 
-zstyle :omz:plugins:ssh-agent agent-forwarding on
+#  Predictable SSH authentication socket location.
+SOCK="/tmp/ssh-agent-$USER-screen"
+if test $SSH_AUTH_SOCK && [ $SSH_AUTH_SOCK != $SOCK ]
+then
+    ln -sf $SSH_AUTH_SOCK $SOCK
+    export SSH_AUTH_SOCK=$SOCK
+fi
+
+# Alias vim on osx
+if [[ "$(uname)" = "Darwin" ]]; then
+        alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+else
+fi
 
 cd ..;1

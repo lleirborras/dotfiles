@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 . ~/.zsh/config
 . ~/.zsh/aliases
 . ~/.zsh/env
-. ~/.zshenv
+. ~/.zshen
 
 if [ -f ~/.zshrc.local ]; then
   . ~/.zshrc.local
@@ -50,4 +50,7 @@ fi
 #if [ -z "$(type -p authsock)" ]; then
 #  eval $(authsock)
 #fi
+
+zstyle :omz:plugins:ssh-agent agent-forwarding on
+
 cd ..;1

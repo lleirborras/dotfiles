@@ -46,3 +46,6 @@ Host *
   Compression yes
   CompressionLevel 9
   #LogLevel debug
+  ControlMaster auto
+  ControlPath ~/.ssh/sockets/%r@%h-%p
+  ControlPersist 600

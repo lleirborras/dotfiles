@@ -28,7 +28,7 @@ task :install do
     end
   end
 
-  system %Q{mkdir "$HOME/.ssh"}
+  system %Q{mkdir  -p "$HOME/.ssh/sockets"}
   system %Q{ln -s "$PWD/ssh/config" "$HOME/.ssh/config"}
 
   # Handle ssh pubkey on its own

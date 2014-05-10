@@ -46,7 +46,7 @@ task :install do
   system %Q{ln -s "$PWD/lleir.zsh-theme" "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
 
   #vim
-  system %Q{curl https://j.mp/spf13-vim3 -L > spf13-vim.sh && sh spf13-vim.sh}
+  system %Q{curl -Lo- https://bit.ly/janus-bootstrap | bash}
 end
 
 def replace_file(file)

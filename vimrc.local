@@ -1,8 +1,0 @@
-UnBundle 'ctrlp'
-UnBundle 'PIV'
-UnBundle 'tpope/vim-cucumber'
-UnBundle 'quentindecock/vim-cucumber-align-pipes'
-
-set tabstop=2 softtabstop=2 shiftwidth=2
-set nocursorline
-set wrap

@@ -3,6 +3,10 @@ set nocursorline
 set wrap
 set mouse=a
 set ttym=xterm2
+set hidden
+set history=1000
+set undodir=~/.vim/tmp/undo
+set undofile
 
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
@@ -13,3 +17,4 @@ let g:solarized_termcolors=256
 set t_Co=16
 set background=dark
 colorscheme solarized
+

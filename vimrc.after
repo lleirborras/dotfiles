@@ -1,5 +1,15 @@
 set tabstop=2 softtabstop=2 shiftwidth=2
 set nocursorline
 set wrap
+set mouse=a
+set ttym=xterm2
 
-color molokai
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+
+let mapleader = ","
+
+let g:solarized_termcolors=256
+set t_Co=16
+set background=dark
+colorscheme solarized

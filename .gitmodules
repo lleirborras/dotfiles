@@ -1,0 +1,3 @@
+[submodule "janus/vim-tmux"]
+	path = janus/vim-tmux
+	url = https://github.com/tejr/vim-tmux.git

@@ -48,4 +48,4 @@ Host *
   #LogLevel debug
   #ControlMaster auto
   #ControlPath ~/.ssh/sockets/%r@%h-%p
-  #ControlPersist 29000
+  #ControlPersist 600

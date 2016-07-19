@@ -40,6 +40,43 @@ Host ifad-dev
   LocalForward localhost:5432 localhost:5432
   LocalForward localhost:8389 10.60.10.10:389
 
+Host mine
+  HostName mine.ifad.org
+  User l.borrasmetje
+
+Host store
+  HostName store.ifad.org
+  User l.borrasmetje
+
+Host redgem
+  HostName redgem.ifad.org
+  User l.borrasmetje
+
+Host persist
+  HostName persist.ifad.org
+  User l.borrasmetje
+
+Host digger
+  HostName digger.ifad.org
+  User l.borrasmetje
+
+Host login
+  HostName login.ifad.org
+  User l.borrasmetje
+
+Host loginstaging
+  HostName loginstaging.ifad.org
+  User l.borrasmetje
+
+Host webapps
+  HostName webapps.ifad.org
+  User l.borrasmetje
+
+Host packages
+  HostName packages.ifad.org
+  User l.borrasmetje
+
+
 Host *
   ForwardAgent yes
   ForwardX11 yes

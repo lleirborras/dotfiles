@@ -39,14 +39,13 @@ task :install do
   system %Q{ln -s "$PWD/id_rsa.pub" "$HOME/.ssh/id_rsa.pub"}
 
   #oh-my-zsh theme
-  puts "Installing OhMyZsh"
-  system %Q{curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh}
-  puts "Linking oh-my-zsh theme"
-  system %Q{rm "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
-  system %Q{ln -s "$PWD/lleir.zsh-theme" "$HOME/.oh-my-zsh/themes/lleir.zsh-theme"}
+  puts "Installing Yadr"
+  system %Q{sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"}
 
-  #vim
-  system %Q{curl -Lo- https://bit.ly/janus-bootstrap | bash}
+
+  system %Q{rmdir $HOME/.zsh.after"}
+  system %Q{ln -s "$PWD/zsh" "$HOME/.zsh.after"}
+
 end
 
 def replace_file(file)

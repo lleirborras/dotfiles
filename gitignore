@@ -9,6 +9,7 @@
 .rbenv-version
 .ruby-version
 .rbenv-gemsets
+.byebug_history
 .tmuxrc
 *~
 *.cache

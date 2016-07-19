@@ -31,7 +31,7 @@ Host roma
   User pi
 
 Host ifad-dev
-  HostName lleir.a008.ifad.org
+  HostName a008.ifad.org
   User lleir
   LocalForward localhost:1080 localhost:1080
   LocalForward localhost:3000 localhost:3000

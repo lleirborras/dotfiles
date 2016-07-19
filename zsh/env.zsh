@@ -23,3 +23,7 @@ export LC_ALL=""
 #export CPPFLAGS=-I/opt/X11/include
 
 export JAVA_HOME=/usr/lib/jvm/java-6-openjdk-i386
+
+export GOHOME=~/Projects/go
+
+export HOMEBREW_GITHUB_API_TOKEN=dca1511b1bff03c7539c5751ef1c19c06cc82be1

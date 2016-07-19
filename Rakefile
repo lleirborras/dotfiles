@@ -43,7 +43,7 @@ task :install do
   system %Q{sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"}
 
 
-  system %Q{rmdir $HOME/.zsh.after"}
+  system %Q{rm -rf $HOME/.zsh.after"}
   system %Q{ln -s "$PWD/zsh" "$HOME/.zsh.after"}
 
 end

@@ -5,6 +5,7 @@
 .hg
 .bundle
 .rvmrc
+.byebug_history
 .rbenv-version
 .ruby-version
 .rbenv-gemsets
@@ -26,6 +27,7 @@ results
 coverage
 coverage.data
 config/database.yml
+config/unicorn.conf.dev.rb
 db/*.sqlite3
 log/*.log
 webrat-*

@@ -1,7 +1,6 @@
 export EDITOR="vim"
 export PATH=/usr/local/bin:$PATH:~/bin:/usr/local/sbin
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
-export PGCLUSTER="9.3/main"
 
 export LANG=en_US.UTF-8
 export LC_CTYPE="$LANG"

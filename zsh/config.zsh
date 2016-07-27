@@ -21,6 +21,10 @@ setopt HIST_IGNORE_SPACE
 setopt APPEND_HISTORY # write history only when closing
 setopt EXTENDED_HISTORY # add more info
 
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \
+  '+l:|?=** r:|?=**'
+
+
 # Other tabbing options
 # setopt NO_AUTO_MENU
 # setopt BASH_AUTO_LIST

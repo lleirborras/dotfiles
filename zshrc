@@ -6,4 +6,5 @@ prompt pure
 for config_file ($HOME/.zsh/*.zsh) source $config_file
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 

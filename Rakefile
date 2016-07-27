@@ -39,6 +39,7 @@ task :install do
   system %Q{ln -s "$PWD/id_rsa.pub" "$HOME/.ssh/id_rsa.pub"}
 
   puts "Installing pure"
+  system %Q{git clone https://github.com/tarjoilija/zgen.git "$HOME/.zgen"}
   system %Q{git clone git@github.com:sindresorhus/pure.git "$HOME/.pure"}
   system %Q{rm /usr/local/share/zsh/site-functions/prompt_pure_setup}
   system %Q{ln -s "$HOME/.pure/pure.zsh" /usr/local/share/zsh/site-functions/prompt_pure_setup}

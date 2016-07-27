@@ -38,7 +38,6 @@ task :install do
   system %Q{rm "$HOME/.ssh/id_rsa.pub"}
   system %Q{ln -s "$PWD/id_rsa.pub" "$HOME/.ssh/id_rsa.pub"}
 
-  #oh-my-zsh theme
   puts "Installing pure"
   system %Q{git clone git@github.com:sindresorhus/pure.git "$HOME/.pure"}
   system %Q{rm /usr/local/share/zsh/site-functions/prompt_pure_setup}

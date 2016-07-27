@@ -5,5 +5,5 @@ prompt pure
 
 for config_file ($HOME/.zsh/*.zsh) source $config_file
 
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"'
+export PATH="$HOME/.rbenv/bin:$PATH"
 
